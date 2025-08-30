@@ -1,0 +1,322 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #678587;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-indent: 30px;
+  text-decoration: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.logo {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #678587;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.comment {
+  height: 50px;
+  width: 400px;
+}
+
+.cSubmit {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.imgProduct {
+  height: 200px;
+  width: 200px;
+  /* object-fit: cover; */
+  border-radius: 6px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid black;
+  background-color: #678587;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  cursor: pointer;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.LoginPage {
+  flex: 1;
+}
+
+.loginButton {
+  background-color: #678587;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: aquamarine;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.uImage {
+  height: 80;
+  width: 10;
+}
+
+.product {
+  margin: 30px;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .products {
+    gap: 15px;
+  }
+
+  .card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .pages {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0 0 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  .card {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .imgProduct {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .box {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .comment {
+    width: 100%;
+  }
+
+  .btn,
+  .cSubmit,
+  .loginButton {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+.highlight {
+  border: 2px solid orange;
+  background-color: #fffaf0;
+}
+.img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.search {
+  margin: 5px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.details {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+.searchImg {
+  height: 14px;
+  width: 14px;
+}
+
+.heading{
+  text-align:start;
+  padding: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+table, th, td{
+  border: 1px solid gray;
+  border-radius: 5px;
+  border-collapse: collapse;
+  margin: 70px;
+  padding: 40px;
+  text-transform: uppercase;
+  width: 90%;
+}
+.mainTable{
+  display: flex;
+  border: none;
+  margin: 6px;
+  text-align: center;
+}
+th{
+  background-color: #e5e5e5;
+}
